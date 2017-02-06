@@ -143,7 +143,7 @@
      	//Редактирование статьи сохранение
         function EditArticles() {
             var id = $('#editId').val();
-            // получаем новые значения для редактируемой книги         
+            // получаем новые значения для редактируемой статьи         
              var articles = {
              	Id: $('#editId').val(),
                 title: $('#editName').val(),
@@ -178,7 +178,7 @@
             DeleteArticles(id);
         }
         
-        // Удаление книги
+        // Удаление Статьи
         function DeleteArticles(id) {
             $.ajax({
                 url: '/admin/articles/articlesdel/' + id,
